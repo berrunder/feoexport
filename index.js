@@ -5,7 +5,7 @@ var fb = require("node-firebird"),
 	moment = require('moment'),
 	config = require('./config');
 
-var lastDate = config.get('lastDate'),
+var lastDate = config.get('lastDate') || '01.01.1990',
 	dbParams = config.get('tsqlDB'),
 	exportParams = [
 		{ 
