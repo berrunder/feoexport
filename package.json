@@ -1,0 +1,24 @@
+{
+  "name": "donexport",
+  "version": "0.0.1",
+  "description": "Tool for export FEO dicts to ms sql",
+  "main": "index.js",
+  "keywords": [
+    "firebird",
+    "ms",
+    "sql",
+    "talisman"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berrunder/feoexport.git"
+  },
+  "author": "Alexander Cherkashin <sehcnas@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "node-firebird": "~0.1.1",
+    "async": "~0.2.10",
+    "moment": "~2.5.1",
+    "nconf": "~0.6.9"
+  }
+}
