@@ -118,7 +118,8 @@ function exportToJSON(db)  {
     	if (err) return console.log(err);
     	var filename = "export" + moment().format('YYYYMMDD_HHmmss') + '.json';
     	//console.log(results);
-    	var json = [].concat.apply(results);
+    	var json = [];
+    	json = json.concat.apply(json, results);
     	
     	fs.writeFile(filename, JSON.stringify(json, null, 2), function(er) {
     		if (err) return console.log(err);
