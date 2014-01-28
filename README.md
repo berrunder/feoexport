@@ -1,4 +1,11 @@
-feoexport
-=========
+# Экспорт справочников для МОН
+Утилита для экспорта справочников ФЭО из базы talisman-sql.
 
-Tool for export FEO dictionaries from firebird database
+# Установка
+Установить [Node.js](http://nodejs.org). Далее выполнить в папке проекта команду `npm install`.
+
+# Настройка
+Файл конфигурации находится по пути `config/config.json`.
+
+# Использование
+`node index.js [json|sql]` - выгрузка справочников в json либо sql файл (по умолчанию json). После выгрузки будет создан файл с именем формата `exportYYYYMMDD_HHmmss` и соответствующим выгружаемому формату расширением.
