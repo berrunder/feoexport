@@ -6,12 +6,14 @@
 
 ## Настройка
 Файл конфигурации находится по пути `config/config.json`. Ветка `tsqlDB` - параметры подключения к базе. Пример:
-	"tsqlDB": {
-		"host": "192.168.1.250",
-		"database": "/vol1/talisman_sql/BASES/TEST/Cherkashin/TSQL.GDB",
-		"user": "DBADMIN",
-		"password": "cnhfiysq"
+
+    "tsqlDB": {
+        "host": "192.168.1.250",
+        "database": "/vol1/talisman_sql/BASES/TEST/Cherkashin/TSQL.GDB",
+        "user": "DBADMIN",
+        "password": "cnhfiysq"
     }
+   
 `lastDate` - выгружаются только пакеты, указанные с этой даты. Формат DD.MM.YYYY.
 
 
