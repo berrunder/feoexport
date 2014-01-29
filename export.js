@@ -7,10 +7,10 @@ function exportToSql(db, import_proc, query, callback) {
 	 		if (callback) return callback(err);
 	 		else return;
 	 	}
-	 	var text = '';
-	 	for (var i = 0; i < rows.length; i++) {
-	 		text += 'EXEC ' + import_proc + ' ' + exportRow(rows[i]) + ';\n';
-	 	}
+	 	var text = rows.map(function(val){
+	 		return 'EXEC ' + import_proc + ' ' + exportRow(val);
+	 	}).join(';\n');
+	 	
 //	 	console.log(text);
 	 	if (callback) callback(null, text);
 	});
